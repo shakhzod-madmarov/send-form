@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="main">
+      <button type="button" class="main__btn" id="mainBtn">Кликни</button>
+      <section class="modal" id="modal">
+        <button class="modal__btn--close" id="btnClose">X</button>
+        <div class="modal-intro">
+          <h1 class="modal-intro__title">
+            Получите набор файлов<br />для руководителя:
+          </h1>
+          <div class="modal-intro__imgs">
+            <img src="images/apps.png" alt="приложения" class="" />
+            <img src="images/book.png" alt="Книга с телефоном" />
+          </div>
+        </div>
+        <div class="modal-inputs">
+          <form class="form" action="index.php">
+            <label for="email"> Введите Email для получения файлов: </label>
+            <input
+              type="text"
+              name="email"
+              class="form__input--email"
+              id="email"
+              placeholder="E-mail"
+              required
+            />
+            <label for="phoneNumber">
+              Введите телефон для потверждения доступа:
+            </label>
+            <input
+              type="phone"
+              name="phoneNumber"
+              class="form__input--phone"
+              id="phoneNumber"
+              placeholder="+7 (000) 000-00-00"
+              required
+            />
+            <button type="submit" class="form__btn--submit" id="btnSubmit">
+              Скачать файлы <i style="font-size: 24px" class="fa">&#xf25a;</i>
+            </button>
+          </form>
+          <p class="modal-inputs--size">
+            <span>PDF 4.7 MB</span> <span>DOC 0.8 MB</span
+            ><span>XLS 1.2 MB</span>
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>
