@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <main class="main">
       <button type="button" class="main__btn" id="mainBtn">Кликни</button>
@@ -25,7 +26,7 @@
           </div>
         </div>
         <div class="modal-inputs">
-          <form class="form" action="index.php">
+          <form class="form" action="email.php" method="post">
             <label for="email"> Введите Email для получения файлов: </label>
             <input
               type="text"
@@ -39,14 +40,19 @@
               Введите телефон для потверждения доступа:
             </label>
             <input
-              type="phone"
+              type="tel"
               name="phoneNumber"
               class="form__input--phone"
               id="phoneNumber"
               placeholder="+7 (000) 000-00-00"
               required
             />
-            <button type="submit" class="form__btn--submit" id="btnSubmit">
+            <button
+              type="submit"
+              class="form__btn--submit"
+              id="btnSubmit"
+              name="submit"
+            >
               Скачать файлы <i style="font-size: 24px" class="fa">&#xf25a;</i>
             </button>
           </form>
